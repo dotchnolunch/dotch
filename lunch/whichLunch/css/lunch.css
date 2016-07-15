@@ -1,0 +1,568 @@
+.hidden {
+    display: none;
+}
+/*slider-design*/
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background: #63AFD0;
+}
+.ui-slider-vertical .ui-slider-handle {
+    left: -.3em;
+    margin-bottom: -.6em;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    left: -0.6em;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+.ui-slider {
+    height: 150px;
+    width: 3px;
+    background: #024A68;
+    border: none;
+    left: 43%;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {} .ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+    border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    border-top-left-radius: 4px;
+}
+.ui-widget-header {
+    background: #fff;
+}
+.ui-slider .ui-slider-range {
+    display: none;
+}
+/*
+carbo header design
+*/
+
+.lunch-carbo-header {
+    position: absolute;
+    width: 100%;
+    margin: 18% auto;
+}
+.header-images-carbo {
+    position: relative;
+}
+#lunch .lunch-title-carbo,
+#lunch .lunch-subtitle-carbo {
+    font-family: "Noto Sans", "Noto Sans CJK JP", "Hiragino Kaku Gothic Pro", "Helvetica Neue";
+    font-weight: 100;
+    color: #FFF;
+    text-align: center;
+}
+#lunch .lunch-title-carbo {
+    letter-spacing: .2em;
+    font-size: 1.4em;
+}
+#lunch .lunch-subtitle-carbo {
+    letter-spacing: 0.7em;
+    font-size: 0.8em;
+}
+#lunch .header-images-carbo img {
+    width: 100%;
+    border-radius: 10px;
+}
+/*enery header design*/
+
+#energy-lower,
+#energy-upper {
+    width: 30%;
+}
+.answer-area {
+    margin: 30px 20px;
+}
+.calc_energy {
+    width: 100%;
+    margin: 5% auto 0%;
+}
+.calc_slider_wrapper {
+    width: 40%;
+}
+.labor {
+    width: 60%;
+}
+@media screen and (max-width: 480px) {
+    .labor,
+    .calc_slider_wrapper {
+        width: 100%;
+    }
+    .ingredient-explanation img#conversation {
+        width: 100%;
+    }
+    #lunch .lunch-images #dish tr:nth-child(1) td {
+        font-size: 0.8em;
+    }
+}
+input[type="text"] {
+    border: none;
+    font-weight: 900;
+    color: #024A68;
+}
+#lunch .labor table {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    font-size: 0.9em;
+}
+#lunch .labor td {
+    border-style: none;
+    vertical-align: middle;
+    background: #fff;
+    text-align: center;
+}
+#lunch .labor td:nth-child(2) {
+    width: 80%;
+    text-align: left;
+}
+#lunch .labor td:nth-child(1) {
+    text-align: right;
+    width: 20%;
+}
+.calc_r {
+    width: 100%;
+    margin: 0px auto 3%;
+}
+.calc_e,
+.calc_w {
+    text-align: center;
+    font-size: .9em;
+    font-weight: 900;
+}
+.ui-slider-vertical .ui-slider-range {
+    left: 0;
+    width: 20%;
+}
+.sprite-mushroom {
+    width: 10%;
+    top: 2%;
+    left: 80%;
+}
+.header-title {
+    position: absolute;
+}
+/*header font settings*/
+/*font size is adjusted in javascript.*/
+
+#lunch .lunch-header h1.lunch-title,
+#lunch .lunch-header h2.lunch-subtitle {
+    font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+}
+/*text display*/
+
+#lunch h2.lunch-subtitle {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+#lunch h1.lunch-title {
+    margin: 0px;
+    padding: 5% 0 .3%;
+}
+.ingredient-explanation {
+    width: 100%;
+    position: relative;
+}
+#lunch .energy-explanation p {
+    margin: 0px;
+    padding: 2%;
+}
+.energy-explanation {
+    position: absolute;
+    top: -2px;
+    left: 87px;
+    width: 55%;
+    line-height: 100%;
+    background-color: #f0cb7d;
+    margin: auto;
+    padding: 4% 5%;
+    height: 25%;
+    border-radius: 40%;
+}
+.comment-eiyoushi {
+    margin: 10px auto;
+}
+.ingredient-explanation img {
+    width: 56%;
+    margin: auto;
+    display: block;
+}
+.ingredient-explanation {
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 2s;
+    -vendor-animation-iteration-count: infinite;
+}
+/*table*/
+
+<<<<<<< HEAD
+.lunch-container > .lunch-images > #dish table,
+.lunch-container > .lunch-images > #dish table tr {
+=======
+.lunch-container > .lunch-images > table#dish,
+.lunch-container > .lunch-images > table#dish tr {
+>>>>>>> origin/master
+    width: 100%;
+    margin: auto 0px;
+    background-color: #fff;
+}
+#lunch td {
+    border-style: none;
+    width: 50%;
+    vertical-align: middle;
+    background: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+#lunch .calc_slider_wrapper tr:nth-child(2) td input {
+    margin: 0px 7% 0px 2%;
+}
+#lunch .calc_slider_wrapper tr:nth-child(1) {
+    margin: 0px 3% 0px 0px;
+}
+#lunch .energy-and-weight #lunch .input_height_activity {
+    border-style: none;
+    width: 100%;
+    vertical-align: middle;
+    background: #fff;
+    font-weight: 500;
+}
+#lunch .energy-and-weight td:nth-child(1) {
+    text-align: right;
+}
+#lunch .energy-and-weight td:nth-child(2) {
+    text-align: left;
+}
+#ingredient-data .ingredient tr:first-child td {
+    font-weight: 800;
+}
+#ingredient-data table.ingredient td {
+    border-style: none;
+    width: 50%;
+    vertical-align: middle;
+    background: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+table.ingredient {
+    visibility: hidden;
+    display: none;
+    display: inline-block;
+    display: table;
+}
+.button-credit {
+    text-align: center;
+    width: 100%;
+    /*position: absolute;*/
+}
+#ingredient-data > div > ul {
+    margin: 0px 20px;
+}
+#ingredient-data > div > ul > li {
+    text-align: center;
+    list-style: none;
+    margin: auto;
+}
+.vertical-align-middle {
+    vertical-align: middle;
+}
+.inline {
+    display: inline-block;
+}
+.eiyoushi {
+    width: 20%;
+}
+.eiyoushi-pic img {
+    border-radius: 50%;
+    border: solid #555 1px;
+    width: 100%;
+}
+.lunch-comment {
+    width: 80%;
+}
+.kanrieiyoushi {
+    text-align: center;
+}
+.small-font {
+    font-size: 0.6em;
+}
+.clearfix {
+    clear: both;
+}
+.photo-credit {
+    margin: 10px 20px;
+}
+.iwasaki-logo {
+    width: 180px;
+    height: 30px;
+    margin-left: 10px;
+}
+.iwasaki-logo img {
+    width: 100%;
+}
+.iwasaki-logo:hover {
+    cursor: pointer;
+    margin-left: 10px;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+}
+.spritelady02:hover {
+    -webkit-animation-duration: .8s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+}
+.bubble {
+    position: relative;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.comment-bubble {
+    width: 90%;
+    background: #FFBD73;
+    border-radius: 10px;
+    padding: 0.1%;
+}
+.triangle {
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #FFBD73;
+}
+/*.hide .lunch-comment p {
+    font-size: 2em;
+}*/
+
+#lunch-answer-button p {
+    color: #ffffff;
+    font-size: 0.9em;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+#lunch-answer-button {
+    background: #FF8700;
+    background-image: -webkit-linear-gradient(top, #FF8700, #fa002e);
+    background-image: -moz-linear-gradient(top, #FF8700, #fa002e);
+    background-image: -ms-linear-gradient(top, #FF8700, #fa002e);
+    background-image: -o-linear-gradient(top, #FF8700, #fa002e);
+    background-image: linear-gradient(to bottom, #FF8700, #fa002e);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    width: 25%;
+    min-width: 130px;
+    height: 50px;
+    margin: 5px auto;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.4s;
+    -webkit-animation-iteration-count: 1;
+}
+#lunch-answer-button:hover {
+    background: #fa002a;
+    background-image: -webkit-linear-gradient(top, #fa002a, #ff8800);
+    background-image: -moz-linear-gradient(top, #fa002a, #ff8800);
+    background-image: -ms-linear-gradient(top, #fa002a, #ff8800);
+    background-image: -o-linear-gradient(top, #fa002a, #ff8800);
+    background-image: linear-gradient(to bottom, #fa002a, #ff8800);
+    cursor: pointer;
+    text-decoration: none;
+}
+}
+.lunch-container {
+    margin: 0px;
+    padding: 10px;
+}
+#lunch #dish tr:nth-child(1) td {
+    font-size: 1.1em;
+    font-weight: 900;
+    text-align: center;
+}
+#lunch #dish tr:nth-child(2) td {
+    font-size: 0.7em;
+}
+.grey {
+    color: #808080;
+}
+.center {
+    margin: auto;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.dish-image {
+    border-radius: 5px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    max-height: 100%;
+    width: 100%;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .4s;
+    -webkit-animation-iteration-count: 1;
+}
+.right {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .6s;
+    -webkit-animation-iteration-count: 1;
+}
+/*Header gradation design*/
+/*salt*/
+
+.lunch-header-salt {
+    /*powered by colorzilla http://www.colorzilla.com/gradient-editor/ */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,75dec9+45,7db9e8+100 */
+    
+    background: rgb(30, 87, 153);
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(-45deg, rgba(30, 87, 153, 1) 0%, rgba(117, 222, 201, 1) 45%, rgba(125, 185, 232, 1) 100%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(-45deg, rgba(30, 87, 153, 1) 0%, rgba(117, 222, 201, 1) 45%, rgba(125, 185, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(135deg, rgba(30, 87, 153, 1) 0%, rgba(117, 222, 201, 1) 45%, rgba(125, 185, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    
+    display: block;
+    margin: 0px auto;
+    border-radius: 22px;
+    position: relative;
+    padding-bottom: 45%;
+}
+/*energy*/
+
+.lunch-header-energy {
+    /*used colorzilla http://www.colorzilla.com/gradient-editor/ */
+    
+    background-color: #FF8700;
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#FF8700, endColorstr=#FA002C);
+    background-image: -moz-linear-gradient(left top, #FF8700 17%, #FA002C 100%);
+    background-image: -webkit-linear-gradient(left top, #FF8700 17%, #FA002C 100%);
+    background-image: -ms-linear-gradient(left top, #FF8700 17%, #FA002C 100%);
+    background-image: linear-gradient(left top, #FF8700 17%, #FA002C 100%);
+    background-image: -o-linear-gradient(left top, #FF8700 17%, #FA002C 100%);
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(17%, rgb(255, 200, 0)), color-stop(100%, #FA007F));
+    display: block;
+    margin: 0px auto;
+    border-radius: 22px;
+    position: relative;
+    padding-bottom: 45%;
+}
+/*carbo*/
+
+.lunch-header-carbo {
+    /*used colorzilla http://www.colorzilla.com/gradient-editor/ */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ff7f81+97 */
+    
+    background: rgb(0, 0, 0);
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 1) 0%, rgba(255, 127, 129, 1) 97%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 1) 0%, rgba(255, 127, 129, 1) 97%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(255, 127, 129, 1) 97%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ff7f81', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    
+    display: block;
+    margin: 0px auto;
+    border-radius: 22px;
+    position: relative;
+    padding-bottom: 45%;
+}
+.lunch-header-purin {
+    /*used colorzilla http://www.colorzilla.com/gradient-editor/ */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffee75+0,d35400+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffee75+0,d35400+100 */
+    
+    background: rgb(255, 238, 117);
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(-45deg, rgba(255, 238, 117, 1) 0%, rgba(211, 84, 0, 1) 100%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(-45deg, rgba(255, 238, 117, 1) 0%, rgba(211, 84, 0, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(135deg, rgba(255, 238, 117, 1) 0%, rgba(211, 84, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffee75', endColorstr='#d35400', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    
+    display: block;
+    margin: 0px auto;
+    border-radius: 22px;
+    position: relative;
+    padding-bottom: 45%;
+}
+#lunch #reference {
+    font-size: 0.7em;
+}
+.header-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10%;
+}
+.header-images div {
+    position: absolute;
+    /*display: block;*/
+    
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,190 @@
+<div class="calc_energy clearfix">
+
+    <div class="calc_r clearfix">
+
+
+        <table class="energy-and-weight">
+            <tr>
+                <td>
+                    適正エネルギー量
+                </td>
+                <td>
+                    <input type="text" id="energy-output" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    標準体重
+                </td>
+                <td>
+                    <input type="text" id="amount_w" readonly>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="calc_slider_wrapper left">
+        <table class="input_height_activity">
+            <tr for="amount_h">
+                <td>身長</td>
+                <td>活動量</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="amount_h" readonly>
+                </td>
+                <td>
+                    <input type="text" id="amount_a" readonly>
+                </td>
+            </tr>
+            <tr class="slider-container">
+                <td>
+                    <div id="slider-h"></div>
+                </td>
+                <td>
+                    <div id="slider-a"></div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="labor left">
+
+        <table>
+            <tr>
+<<<<<<< HEAD
+                <td>al;ksjdl;fakj活動量１</td>
+=======
+                <td>活動量１</td>
+>>>>>>> origin/master
+                <td>ほとんど座っている。動きが少ない。</td>
+            </tr>
+            <tr>
+                <td>活動量２</td>
+                <td>日中歩き回る。よく動く。立ち仕事が多い。</td>
+            </tr>
+            <tr>
+                <td>活動量３</td>
+                <td>力仕事が多い。</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script>
+<<<<<<< HEAD
+    console.log("calc_app loaded");
+=======
+>>>>>>> origin/master
+    //View sliders.
+
+    var initialHeight = "174cm";
+    var initialActivity = "2";
+    var initialWeight = "67kg";
+    var initialEnergyOutput = "2010〜2345kcal";
+
+    $("#amount_h").val(initialHeight).css("width", initialHeight.length * 12);
+    $("#amount_a").val(initialActivity).css("width", initialActivity.length * 12);
+    $("#amount_w").val(initialWeight).css("width", initialWeight.length * 12);
+    $("#energy-output").val(initialEnergyOutput).css("width", initialEnergyOutput.length * 12);
+
+
+
+    // height slider.
+
+    $(function() {
+        var height = 174;
+        var s_weight = 67;
+        var activity = 2;
+
+        $("#slider-h").slider({
+
+
+            orientation: "vertical",
+            range: "min",
+            min: 120,
+            max: 200,
+            value: (height != undefined) ? height : 174,
+            slide: function(event, ui) {
+
+                height = ui.value;
+                s_weight = Math.round(height / 100 * height / 100 * 22);
+
+                height = height + "cm";
+                heightSize = height.length * 11 + "px";
+                $("#amount_h").val(height).css("width", heightSize);
+
+                weightKg = s_weight + "kg";
+                s_weightSize = weightKg.length * 10 + "px";
+                $("#amount_w").val(weightKg).css("width", s_weightSize);
+
+                calc_energy(s_weight, activity);
+
+            }
+
+        });
+
+        // activity slider.
+        $("#slider-a").slider({
+
+            orientation: "vertical",
+            range: "min",
+            step: 1,
+            min: 1,
+            max: 3,
+            value: (activity != undefined) ? activity : 2,
+            slide: function(event, ui) {
+
+                activity = ui.value;
+
+                $("#amount_a").val(activity);
+                calc_energy(s_weight, activity);
+
+            }
+        });
+
+        $("#amount_a").val($("#slider-a").slider("value"));
+    });
+
+    //calculatin energy and display it
+    function calc_energy(s_weight, activity) {
+
+        var perKcalLower, perKcalUpper, al, au,
+            energyLower, energyUpper;
+
+        switch (activity) {
+            case 1:
+                perKcalLower = 25;
+                perKcalUpper = 30;
+                al = "〜";
+                au = "kcal";
+                break;
+
+            case 2:
+                perKcalLower = 30;
+                perKcalUpper = 35;
+                al = "〜";
+                au = "kcal";
+                break;
+
+            case 3:
+                perKcalLower = 36;
+                perKcalUpper = 36;
+                al = "";
+                au = "kcal以上";
+                break;
+
+        }
+
+        var energyLower = s_weight * perKcalLower;
+        var energyUpper = s_weight * perKcalUpper;
+
+        if (perKcalLower === perKcalUpper) {
+            var energyOutput = energyLower + au;
+        } else {
+            var energyOutput = energyLower + al + energyUpper + au;
+        }
+        $("#energy-output").val(energyOutput).css("width", energyOutput.length * 11);
+    };
+</script>

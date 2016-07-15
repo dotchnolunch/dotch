@@ -1,0 +1,19 @@
+<p>外食するとついつい主食（炭水化物）・主菜（たんぱく質）に偏りがちですが、野菜を取り入れるように工夫しましょう。毎食、主食・主菜・副菜をそろえることを意識して！　エネルギーの多い料理、炭水化物の多い料理など特徴を知って賢く選びましょう。<br> ※医療機関を受診されている方は、主治医の医師や管理栄養士に相談しましょう。
+</p>
+<p id="reference"></p>
+
+<script>
+    //final message reference.
+    var array_reference = ["日本食品標準成分表2010",
+        "日本人の食事摂取基準2015年版",
+        "<a href='https://www.jstage.jst.go.jp/article/gnam/39/1/39_7/_pdf' target='_blank'>金子希代子他、痛風と核酸代謝39（1）, 7-21, 2015</a>",
+        "高尿酸血症・痛風の治療ガイドライン第２版"
+    ];
+    if (n % 4　 == 0) {
+        var reference = array_reference[0] + "、" + array_reference[1] + "、" + array_reference[2] + "、" + array_reference[3];
+    } else {
+        var reference = array_reference[0] + "、" + array_reference[1];
+    }
+    $("#reference").html(reference).css("font-size", "0.8em");
+    $("#reference").before("<h3>参考文献</h3>");
+</script>
